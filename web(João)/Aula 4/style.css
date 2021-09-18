@@ -1,0 +1,47 @@
+.div_botao{
+height: 30px;
+width: 100px;
+line-height: 30PX;
+background-color: chartreuse;
+text-align: center;
+}
+
+/* MUDAR COR AO COLOCAR O MOUSE EM CIMA*/
+.div_botao:hover{
+    background-color: yellow;
+}
+
+/* DEIXAR LISTA NA HORIZONTAL*/
+li{
+    float: left;
+    list-style-type: none;
+}
+
+/*remover sublinhado*/
+a{
+    text-decoration: none;
+}
+
+.div_menu{
+    height: 30px;
+    width: 600px;
+    line-height: 30PX;
+    border: solid black;
+    text-align: center
+    b;
+    }
+
+    
+.div_conteudo{
+    height: 200px;
+    width: 600px;
+    line-height: 30PX;
+    border: solid red;
+    }
+
+.div_rodape{
+    height: 30px;
+    width: 600px;
+    line-height: 30PX;
+    border: solid blue;
+    }

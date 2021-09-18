@@ -1,0 +1,36 @@
+.div_principal{
+height: 600px;
+width: 900px;
+border: solid 3px black;
+
+}
+
+.div_interior{
+    height: 90px;
+    width: 880px;
+    border: solid 2px black;
+    margin:auto;
+    margin-top: 10px;
+    }
+    
+
+    table{
+    height: 450px;
+    width: 880px;
+    border: solid 3px green;
+    margin: 0 auto;
+    margin-top: 10px;
+    }
+
+    th{
+        border-top:solid 2px red;
+        border-bottom:solid 2px red;
+         
+     }
+
+     td{
+        border-left:solid 2px  rgb(111, 0, 255);
+        border-right:solid 2px rgb(111, 0, 255);
+         
+     }
+
