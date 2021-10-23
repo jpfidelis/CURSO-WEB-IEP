@@ -1,0 +1,20 @@
+.banner_padrao{
+
+    height: 460px !important;
+    object-fit: fill;
+}
+
+.carousel-caption{
+
+    background-color: black;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 70%;
+}
+
+.card{
+
+    background-color: darkkhaki;
+    
+}
