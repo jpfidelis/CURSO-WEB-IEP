@@ -1,0 +1,37 @@
+NOME: Julio Cesar Soares
+
+1 - TRAGA A QUANTIDADE DE ATENDIMENTOS AGRUPADOS POR CODIGO DE PACIENTE
+
+SELECT atd.cd_paciente, COUNT(atd.cd_atendimento) 
+FROM atendimento AS atd
+GROUP BY atd.cd_paciente;
+
+2 - TRAGA A SOMA DO VALOR DO ATENDIMENTO AGRUPADO POR CONVENIO
+
+SELECT atd.cd_convenio, SUM(atd.cd_atendimento) 
+FROM atendimento AS atd
+GROUP BY atd.cd_convenio;
+
+3 - TRAGA O ATENDIMENTO MAIS RECENTE AGRUPADO PELO CODIGO DE PACIENTE
+
+SELECT atd.cd_paciente, MAX(atd.dt_atendimento) AS data_mais_recente
+FROM atendimento AS atd
+GROUP BY atd.cd_paciente;
+
+4 - TRAGA O ATENDIMENTO MAIS ANTIGO AGRUPADO POR CODIGO DE ESPECIALIDADE 
+
+SELECT atd.cd_especialidade, MIN(dt_atendimento) AS data_mais_antiga
+FROM atendimento AS atd
+GROUP BY atd.cd_especialidade;
+
+5 - TRAGA A SOMA DO VALOR DO ATENDIMENTO AGRUPADO POR PACIENTE ONDE O CODIGO DO CONVENIO ESTEJA ENTRE 1 e 3
+
+SELECT atd.cd_paciente, SUM(atd.vl_atendimento) AS valor
+FROM atendimento AS atd
+WHERE atd.cd_convenio IN (1,2,3)
+GROUP BY atd.cd_paciente;
+
+SELECT atd.cd_paciente, SUM(atd.vl_atendimento) AS valor
+FROM atendimento AS atd
+WHERE atd.cd_convenio BETWEEN 1 AND 3
+GROUP BY atd.cd_paciente;
